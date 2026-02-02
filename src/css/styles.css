@@ -1,5 +1,108 @@
-body {
-    background-color:brown; 
-    color:beige; 
-
+html, body {
+    background-color: rgb(252, 228, 201); 
+    color: rgb(54, 55, 88); 
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 100%;
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(54, 55, 88); 
+    padding: 10px;
+}
+
+.navbar a {
+    color: rgb(255, 170, 72); 
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(71, 73, 116); 
+    border-radius: 5px;
+}
+
+/* Main content */
+main {
+    flex: 1; /* footern är längst ner på sidan */
+    max-width: 1200px;
+    margin: 20px; /* lite luft runt main */
+    padding: 0 10px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+main ul {
+    line-height: 1.5;
+    margin-left: 20px; /* lite luft/indrag */
+}
+
+/* Bilder */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* vänsterjusterar bilderna */
+}
+
+.images img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(54, 55, 88); 
+    color: rgb(255, 170, 72); 
+    margin-top: auto; 
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .images img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .images img {
+        width: 100%;
+    }
+}
+
+  
