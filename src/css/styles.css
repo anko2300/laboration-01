@@ -72,6 +72,15 @@ main ul {
     margin-left: 20px; /* lite luft/indrag */
 }
 
+code {
+    background-color: #f6d09e;
+    color: #e26c11;               /* textfärg */
+    padding: 2px 6px;          /* lite inre marginal, så det blir som en knapp */
+    border-radius: 6px;        /* rundade hörn */
+    font-family: monospace;    
+    font-size: 0.95em;         
+  }
+
 /* Bilder */
 .images {
     display: flex;
