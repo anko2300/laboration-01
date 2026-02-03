@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 01</title>
-  <script type="module" crossorigin src="/assets/main-DXX3xMAH.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-ClUzpSGL.css">
+  <script type="module" crossorigin src="/assets/main-Drl5UkzF.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CD4hk8Bh.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
         <div class="site-title">
             laboration-01
           </div>
-          
+
         <nav class="navbar">
           <a href="index.html">Startsida</a>
           <a href="bilder.html">Bilder</a>
@@ -23,15 +23,23 @@
 
     <main>
         <section>
-    <h1>Arbetsprocess</h1>
-    <p>Här ska jag beskriva hur webbplatsen har utvecklats och publicerats.</p>
-    <ul>
-      <li>1. Hej</li>
-      <li>2. Hej</li>
-      <li>3. Hej</li>
-      <li>4. Hej</li>
-    </ul>
-</section>
+            <h1>Arbetsprocess</h1>
+            <p>
+                Webbplatsen byggdes med hjälp av Vite som grund för NodeJS, som gjorde det enklare att organisera projektet och automatisera vissa moment. Jag startade ett Git-repo och skapade två huvudbrancher: <code>development</code> för den löpande utvecklingen och testningen, och <code>main</code> för den färdiga versionen som ska publiceras. För att slippa versionhantera stora mappar som <code>node_modules</code> la jag till dem i <code>.gitignore</code>.
+            </p>
+            <p>
+                Projektet strukturerades med mappar för CSS, JavaScript och bilder under <code>src</code>, och webbplatsen består av tre sidor: startsida, en bildsida som innehåller fem bilder, och denna sida som beskriver arbetsprocessen. Jag byggde en navigeringsmeny för enkel åtkomst mellan sidorna, och sidans namn visas i sidhuvudet. Designen är responsiv och anpassar sig till olika skärmstorlekar med hjälp av media queries.
+            </p>
+            <p>
+                Automatisering har varit en viktig del av arbetet. CSS och JavaScript minifierades automatiskt vid byggprocessen med hjälp av Vite, och bilder optimerades och konverterades till moderna format som WebP med kvalitet 75 när dom uppdaterades genom pluginet <code>vite-plugin-image-optimizer</code>. För att se resultatet använde jag <code>npm run build</code> för att skapa en publiceringsmapp med optimerade filer och <code>npm run preview</code> för att kontrollera hur sidan ser ut innan publicering.
+            </p>
+            <p>
+                Alla installerade paket finns listade i <code>package.json</code>, vilket gör att projektet enkelt kan återställas med <code>npm install</code> på en ny dator. Under hela utvecklingen har jag använt Git och GitHub för att spåra ändringar, med regelbundna commits för att dokumentera arbetet. Bilderna optimeras automatiskt varje gång de uppdateras, vilket säkerställer att den publicerade sidan alltid är optimerad.
+            </p>            
+            <p>
+                Webbplatsen publiceras automatiskt via GitHub när ändringar görs i <code>main</code>-branchen, och <code>dist</code>-mappen används som källa för publicerade filer. Arbetsprocessen har gjort det lättare att jobba strukturerat, hålla koll på ändringar och säkerställa att sidan alltid är optimerad och redo att publiceras. Jag tycker att det har varit lärorikt att kombinera verktyg för att automatisera projektet, även om det också varit endel att ta in.
+            </p>
+          </section>          
 </main>
 
 
