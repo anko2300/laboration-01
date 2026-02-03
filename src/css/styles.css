@@ -14,6 +14,17 @@ html, body {
     padding: 0;
 }
 
+/* Sidotitel */ 
+.site-title {
+    background-color: rgb(54, 55, 88); 
+    color: rgb(214, 214, 241); 
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+  }
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -72,7 +83,6 @@ main ul {
 .images img {
     width: 30%;
     height: auto;
-    border-radius: 5px;
 }
 
 /* Footer */
