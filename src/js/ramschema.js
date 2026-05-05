@@ -42,3 +42,21 @@ function displayCourses(courseList) { // Funktion som skriver ut kurser i tabell
     });
 }
 loadCourses(); // Hämtar kurserna och visar dom när sidan laddas 
+
+// Kör filterCourses varje gång man skriver i sökfältet
+document.getElementById("search").addEventListener("input", filterCourses);
+
+function filterCourses() { // Funktion som filtrerar kurser baserat på söktexten
+
+    // Hämtar värdet och gör det till små bokstäver
+   const searchValue = document.getElementById("search").value.toLowerCase(); 
+   const filteredCourses = courses.filter(course =>
+
+    // Filtrerar kurser efter kurskod eller kursnamn
+       course.code.toLowerCase().includes(searchValue) ||
+       course.coursename.toLowerCase().includes(searchValue)
+   );
+
+   // Visar de filtrerade kurserna i tabellen 
+   displayCourses(filteredCourses);
+}
